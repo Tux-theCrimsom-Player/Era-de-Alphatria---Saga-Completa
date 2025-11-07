@@ -31,7 +31,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         {
                             WriteLine("Sessão Encerrada, obrigado por jogar!");
                             WriteLine("\n-__-_-{ < Créditos...");
-                            WriteLine("Desenvolvedor: Crimsom - Canal Crimsom Rampage");
+                            WriteLine("Desenvolvedor: Tux The Crimson Player");
                             WriteLine("\nInspirações: Muitas coisas, não vai ser possível listar kkkkkkk");
                             WriteLine("\nMétodos de divulgação: Tik Tok e Facebook");
                             WriteLine("\nAgradecimentos: Agradeço a todos aqueles que me apoiaram e me acompanharam nessa jornada, sendo eles meus professores, meus amigos, e agradeço também a essa vida incrível que eu estou tendo pelo menos até agora que estou escrevendo esta linha kkkkkkk, brincadeirinhas a parte eu querendo ou não sou grato a minha vida por ter sido recheada de oportunidades...");
@@ -211,7 +211,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
         {
             int racap, quimeratype;
             double vidap, staminap, manap, carismap, percepcaop, forcap, velocidadep, inteligenciap;
-            bool afinidadep;
+            bool afinidadep, regeneracaovampiricap;
             WriteLine("\n< { _ - Menu de Personagem - _ } >");
             WriteLine("-Menu de raças...");
             Sleep(500);
@@ -249,6 +249,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         velocidadep = 1000;
                         inteligenciap = 1000;
                         afinidadep = true;
+                        regeneracaovampiricap = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU HUMANO - >");
                         WriteLine("Seus status são relativamente comuns, não tendo uma vantagem, mas você tem o uso de afinidade, que permite seus ataques ficarem mais fortes com os 'buffs de equipamento'.");
                     }
@@ -264,6 +265,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         velocidadep = 1000;
                         inteligenciap = 2000;
                         afinidadep = false;
+                        regeneracaovampiricap = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU ELFO - >");
                         WriteLine("Sua inteligência é a mais alta, porém você é um ser muito reservado e frágil comparado aos outros.");
                     }
@@ -279,6 +281,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         velocidadep = 500;
                         inteligenciap = 500;
                         afinidadep = false;
+                        regeneracaovampiricap = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU ORC - >");
                         WriteLine("Você é forte, mas você tem os passos pesados e uma limitação de QI.");
                     }
@@ -294,6 +297,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         velocidadep = 1750;
                         inteligenciap = 250;
                         afinidadep = false;
+                        regeneracaovampiricap = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU GOBLIN - >");
                         WriteLine("Sua raça nos ramos comuns é considerada a mais asquerosa, porém pela sua alta stamina e velocidade, sua raça é considerada privilégio nos ramos mais obscuros, como o roubo.");
                     }
@@ -315,13 +319,88 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     velocidadep = 1000;
                                     inteligenciap = 2000;
                                     afinidadep = false;
+                                    regeneracaovampiricap = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DA RAZÃO - >");
                                     WriteLine("Os seus genes são a variação que surgiu dos genes dos elfos, carisma não lhe importa, força não lhe importa, o que lhe importa é ser racional...");
                                 }
                                 break;
+                            case 2: {
+                                    vidap = 1000;
+                                    staminap = 1000;
+                                    manap = 1000;
+                                    carismap = 1000;
+                                    percepcaop = 100;
+                                    forcap = 2000;
+                                    velocidadep = 2000;
+                                    inteligenciap = 100;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = false;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DA AGRESSÃO - >");
+                                    WriteLine("Os seus genes são a variação que surgiu dos genes dos orcs, você vive para protejer os fracos...");
+                            }
+                            break;
+                            case 3: {
+                                    vidap = 500;
+                                    staminap = 500;
+                                    manap = 500;
+                                    carismap = 500;
+                                    percepcaop = 500;
+                                    forcap = 500;
+                                    velocidadep = 500;
+                                    inteligenciap = 500;
+                                    afinidadep = true;
+                                    regeneracaovampiricap = true;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DO DOPPELGÄNGER - >");
+                                    WriteLine("Seus genes, são vindos da raça humana, mas... Por acaso isso importa? Você não lembra como nasceu, quem eram seus pais, se já morreu, não importa mais, mas nada mais lhe importa, desde que aquele acidente entre o divíno e o mortal ocorreu, seu único motivo de vida é imitar, ser um reflexo feito de carne, ossos, alma e entranhas. Movido a vitalidade daqueles em sua volta, agora, tu és simplesmente um ser emocionalmente vazio, como uma casca oca de uma árvore...");
+                            }
+                            break;
                         }
                     }
                     break;
+                    case 6: {
+                                    vidap = 2000;
+                                    staminap = 2000;
+                                    manap = 2000;
+                                    carismap = 1000;
+                                    percepcaop = 2;
+                                    forcap = 2000;
+                                    velocidadep = 2000;
+                                    inteligenciap = 1;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = false;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU HÍBRIDO DRACÔNICO - >");
+                                    WriteLine("Forte e capaz, porém tolo e ingênuo.");
+                    }
+                    break;
+                    case 7: {
+                                    vidap = 750;
+                                    staminap = 250;
+                                    manap = 1250;
+                                    carismap = 1750;
+                                    percepcaop = 250;
+                                    forcap = 250;
+                                    velocidadep = 250;
+                                    inteligenciap = 250;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = false;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU FADA - >");
+                                    WriteLine("Apesar de ser biologicamente frágil, sua gentileza é o que lhe faz forte.");
+                    }
+                    break;
+                    case 8: {
+                        vidap = 2000;
+                                    staminap = 1000;
+                                    manap = 1000;
+                                    carismap = 1000;
+                                    percepcaop = 1000;
+                                    forcap = 900;
+                                    velocidadep = 1100;
+                                    inteligenciap = 1000;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = false;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU SEREIA / TRITÃO - >");
+                                    WriteLine("Você.");
+                    }
             }
             return racap;
         }
