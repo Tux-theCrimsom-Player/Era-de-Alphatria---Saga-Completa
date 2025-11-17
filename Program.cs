@@ -211,7 +211,7 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
         {
             int racap, quimeratype;
             double vidap, staminap, manap, carismap, percepcaop, forcap, velocidadep, inteligenciap;
-            bool afinidadep, regeneracaovampiricap;
+            bool afinidadep, regeneracaovampiricap, natacaoaprimoradap, berserkdicep;
             WriteLine("\n< { _ - Menu de Personagem - _ } >");
             WriteLine("-Menu de raças...");
             Sleep(500);
@@ -250,6 +250,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         inteligenciap = 1000;
                         afinidadep = true;
                         regeneracaovampiricap = false;
+                        natacaoaprimoradap = false;
+                        berserkdicep = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU HUMANO - >");
                         WriteLine("Seus status são relativamente comuns, não tendo uma vantagem, mas você tem o uso de afinidade, que permite seus ataques ficarem mais fortes com os 'buffs de equipamento'.");
                     }
@@ -266,6 +268,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         inteligenciap = 2000;
                         afinidadep = false;
                         regeneracaovampiricap = false;
+                        natacaoaprimoradap = false;
+                        berserkdicep = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU ELFO - >");
                         WriteLine("Sua inteligência é a mais alta, porém você é um ser muito reservado e frágil comparado aos outros.");
                     }
@@ -282,6 +286,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         inteligenciap = 500;
                         afinidadep = false;
                         regeneracaovampiricap = false;
+                        natacaoaprimoradap = false;
+                        berserkdicep = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU ORC - >");
                         WriteLine("Você é forte, mas você tem os passos pesados e uma limitação de QI.");
                     }
@@ -298,6 +304,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                         inteligenciap = 250;
                         afinidadep = false;
                         regeneracaovampiricap = false;
+                        natacaoaprimoradap = false;
+                        berserkdicep = false;
                         WriteLine("\n< - VOCÊ ESCOLHEU GOBLIN - >");
                         WriteLine("Sua raça nos ramos comuns é considerada a mais asquerosa, porém pela sua alta stamina e velocidade, sua raça é considerada privilégio nos ramos mais obscuros, como o roubo.");
                     }
@@ -320,6 +328,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 2000;
                                     afinidadep = false;
                                     regeneracaovampiricap = false;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DA RAZÃO - >");
                                     WriteLine("Os seus genes são a variação que surgiu dos genes dos elfos, carisma não lhe importa, força não lhe importa, o que lhe importa é ser racional...");
                                 }
@@ -335,6 +345,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 100;
                                     afinidadep = false;
                                     regeneracaovampiricap = false;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DA AGRESSÃO - >");
                                     WriteLine("Os seus genes são a variação que surgiu dos genes dos orcs, você vive para protejer os fracos...");
                             }
@@ -350,6 +362,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 500;
                                     afinidadep = true;
                                     regeneracaovampiricap = true;
+                                    natacaoaprimoradap = true;
+                                    berserkdicep = true;
                                     WriteLine("\n< - VOCÊ ESCOLHEU QUIMERA, SEUS GENES SÃO O DO DOPPELGÄNGER - >");
                                     WriteLine("Seus genes, são vindos da raça humana, mas... Por acaso isso importa? Você não lembra como nasceu, quem eram seus pais, se já morreu, não importa mais, mas nada mais lhe importa, desde que aquele acidente entre o divíno e o mortal ocorreu, seu único motivo de vida é imitar, ser um reflexo feito de carne, ossos, alma e entranhas. Movido a vitalidade daqueles em sua volta, agora, tu és simplesmente um ser emocionalmente vazio, como uma casca oca de uma árvore...");
                             }
@@ -368,6 +382,8 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 1;
                                     afinidadep = false;
                                     regeneracaovampiricap = false;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU HÍBRIDO DRACÔNICO - >");
                                     WriteLine("Forte e capaz, porém tolo e ingênuo.");
                     }
@@ -383,12 +399,14 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 250;
                                     afinidadep = false;
                                     regeneracaovampiricap = false;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU FADA - >");
                                     WriteLine("Apesar de ser biologicamente frágil, sua gentileza é o que lhe faz forte.");
                     }
                     break;
                     case 8: {
-                        vidap = 2000;
+                                    vidap = 2000;
                                     staminap = 1000;
                                     manap = 1000;
                                     carismap = 1000;
@@ -398,9 +416,46 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
                                     inteligenciap = 1000;
                                     afinidadep = false;
                                     regeneracaovampiricap = false;
+                                    natacaoaprimoradap = true;
+                                    berserkdicep = false;
                                     WriteLine("\n< - VOCÊ ESCOLHEU SEREIA / TRITÃO - >");
-                                    WriteLine("Você.");
+                                    WriteLine("Você é frágil nos pés, mas é forte nas nadadeiras.");
                     }
+                    break;
+                    case 9: {
+                                    vidap = 1125;
+                                    staminap = 875;
+                                    manap = 1125;
+                                    carismap = 875;
+                                    percepcaop = 875;
+                                    forcap = 875;
+                                    velocidadep = 875;
+                                    inteligenciap = 875;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = true;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = false;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU VAMPIRO - >");
+                                    WriteLine("Você é um ser bem sombrio e sepre tem truques baratos a espreita... Mas detesta pão de alho.");
+                    }
+                    break;
+                    case 10: {
+                                    vidap = 1050;
+                                    s
+                                    manap = 950;
+                                    carismap = 950;
+                                    percepcaop = 1050;
+                                    forcap = 950;
+                                    velocidadep = 1050;
+                                    inteligenciap = 950;
+                                    afinidadep = false;
+                                    regeneracaovampiricap = false;
+                                    natacaoaprimoradap = false;
+                                    berserkdicep = true;
+                                    WriteLine("\n< - VOCÊ ESCOLHEU HOMEM FERA / MULHER FERA - >");
+                                    WriteLine("Você é aleatóriamente entra em modo primitivo, literalmente agindo igual ao animal que você é.");
+                    }
+                    break;
             }
             return racap;
         }
