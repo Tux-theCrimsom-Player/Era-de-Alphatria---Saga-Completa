@@ -459,5 +459,18 @@ namespace Era_de_Alphatria_versão_todos_os_capítulos
             }
             return racap;
         }
+        public static string Documentacao();
+        {
+            string nome, sobrenome;
+            int genero, cpf1, cpf2, cpf3, cp4;
+            bool familiaVissoleta;
+            Random cpf = new Random;
+            WriteLine("\n< { _ - Menu de Personagem - _ } >");
+            WriteLine("-Menu de documentação...");
+            Write("Insira o nome desejado para seu personagem: ");
+            nome = ReadLine();
+            Write("Inssira o sobrenome do seu personagem: ");
+            sobrenome = ReadLine();
+        }
     }
 }
